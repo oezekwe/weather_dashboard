@@ -10,11 +10,25 @@
     <title>Weather</title>
 </head>
 <body>
-    <form id="search-form">
-        <label>Search for City:</label>
-        <input name="city" id="city" type="text" />
-        <button type="submit">Search</button>
-    </form>
+    <div class="row">
+        <div class="col">
+            <form id="search-form">
+                <label>Search for City:</label>
+                <input name="city" id="city" type="text" />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col">
+            <h2><span class="city"></span> (<span id="date"></span>)</h2>
+            <p>Temperature: <span id="temp"></span>&#8457;</p>
+            <p>Humidity: <span id="humid"></span>%</p>
+            <p>Wind Speed: <span id="mph"></span> MPH</p>
+            <p>UV Index: <span id="uv"></span></p>
+        </div>
+    </div>
+    <div class="">
+        
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="assets/weatherData_handler.js"></script>
