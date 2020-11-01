@@ -40,7 +40,16 @@ function displayCurrWeather(forecast){
 }
 
 function displayFutureWeather(forecast){
-    console.log(forecast);
+    //console.log(forecast);
+    for(var x=1; x<6; x++){
+        let cast= forecast.daily[x];
+        let d= new Date(cast.dt * 1000);
+        let date= 1+d.getMonth()+"/"+d.getDate()+"/"+d.getFullYear();
+        $(".dy"+x+" h3").append(date);
+        $(".dy"+x+" p:nth-of-type(1)").append("Temp: "+cast.temp.max+"&#8457;");
+        $(".dy"+x+" p:nth-of-type(2)").append("Humidity: "+cast.humidity+"%");
+        //console.log(cast.temp.max+"\n\n");
+    }
 }
 
 search.addEventListener("submit", getCity);
