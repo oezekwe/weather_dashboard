@@ -2,6 +2,14 @@
     display: none;
 }
 
+#visible{
+    margin-left: 300px;
+}
+
+.selectmenu{
+    margin-top: 40px;
+}
+
 .future{
     margin-top: 200px;
     margin-left: 160px;
@@ -13,8 +21,6 @@
 
 .cities{
     width: 200px;
-    height: 150px;
-    overflow-y: auto;
 }
 
 .severe{background-color: red;}
